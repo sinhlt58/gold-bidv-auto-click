@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Gold BIDV",
+  "description": "Help buying gold in BIDV website",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://gold.bidv.com.vn/*"],
+      "js": ["auto-click.js"]
+    }
+  ]
+}
