@@ -4,7 +4,7 @@ var isClicked = false;
 var button = document.querySelector(".next-step.btn-block");
 
 const targetTime = new Date();
-targetTime.setHours(9, 30, 0); // Set target time to 9:30:00 AM
+targetTime.setHours(9, 30, 0, 300); // Set target time to 9:30:00 AM
 
 setInterval(function () {
   const currentTime = new Date();
